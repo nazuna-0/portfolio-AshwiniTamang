@@ -232,38 +232,3 @@ header {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .Main {
-        padding: 20px;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    #Welcome {
-        padding: 60px 20px;
-        text-align: center;
-    }
-    
-    #portrait {
-        position: static;
-        transform: none;
-        margin: 40px auto 0;
-        display: block;
-    }
-    
-    .buttons {
-        justify-content: center;
-    }
-    
-    .section, #connect {
-        padding: 60px 20px;
-    }
-    
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .navi {
-        gap: 20px;
-    }
-}
