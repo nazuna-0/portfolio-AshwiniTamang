@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Playwrite CZ", cursive;
+    background-color: #443C68;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    background-color: #18122B;
+}
+.Main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#logo {
+    color: rgb(255, 208, 236);
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.navi {
+    display: flex;
+    gap: 30px;
+}
+
+.navi a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navi a:hover {
+    color: rgb(255, 208, 236);
+    
+}
+
+#Welcome {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 100px;
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contents h2 {
+    font-size: 37px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.contents h1 {
+    font-size: 53px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#info {
+    max-width: 500px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+.but {
+    background: transparent;
+    border: 2px solid #18122B;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ;
+    background-color: #18122B;
+    font-family: "PT Sans", sans-serif;
+}
+
+.but:hover {
+    background: white;
+    color: #18122B;
+}
+
+#portrait {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.divider {
+    height: 75px;
+    width: 100%;
+    background-color: #635985;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 100px;
+}
+
+.section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#about {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: #18122B;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3ms;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-image {
+    width: 100%;
+    height: 200px;
+    background-color: #2A2F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(255, 208, 236);
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E5E5E5;
+}
+
+#connect {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 100px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    color: #333;
+    font-family: "Work Sans", sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgb(255, 208, 236);
+}
+
+#connect button {
+    background: #18122B;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: "PT Sans", sans-serif;
+}
+
+#connect button:hover {
+    background: #2A2F4F;
+}
+
+#foot{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #Welcome {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    #portrait {
+        position: static;
+        transform: none;
+        margin: 40px auto 0;
+        display: block;
+    }
+    
+    .buttons {
+        justify-content: center;
+    }
+    
+    .section, #connect {
+        padding: 60px 20px;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .navi {
+        gap: 20px;
+    }
+}
